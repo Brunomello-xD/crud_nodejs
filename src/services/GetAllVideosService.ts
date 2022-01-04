@@ -5,7 +5,7 @@ export class GetAllVideosService{
  async execute() {
   const repo = getRepository(Video);
 
-  const videos = await repo.findOne({
+  const videos = await repo.find({
     relations: ['category']
   });
 
