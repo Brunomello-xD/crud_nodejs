@@ -8,8 +8,7 @@ type VideoRequest = {
   duration: number;
   category_id: string;
 }
-
-
+// just a teste
 export class CreateVideoService{
   async execute({name, description, duration, category_id}: VideoRequest): Promise<Error | Video> {
     const repo = getRepository(Video);
